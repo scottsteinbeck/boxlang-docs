@@ -333,7 +333,7 @@ BoxFutures provide a unique `getAsAttempt()` method that returns results wrapped
 // Get result as Attempt
 attempt = future.getAsAttempt();
 
-if ( attempt.isSuccess() ) {
+if ( attempt.wasSuccessful() ) {
     writeOutput( "Success: " & attempt.getResult() );
 } else {
     writeOutput( "Error: " & attempt.getError() );
